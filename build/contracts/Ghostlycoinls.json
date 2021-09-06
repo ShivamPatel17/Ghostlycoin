@@ -1,0 +1,215 @@
+{
+  "contractName": "Ghostlycoinls",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Ghostlycoinls.sol\":\"Ghostlycoinls\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Ghostlycoinls.sol\":{\"keccak256\":\"0x8689d263d131fe6353bddb0516fb0841f7d4c0a1ad0826ca98e7ca42bfb241ab\",\"urls\":[\"bzz-raw://4d7a4451f6e305e6f77d025753d9c1cb574151d01b7f2db55bf845858fcd7ef8\",\"dweb:/ipfs/QmfGCFFVTExXYbcEV6Xdmpt1RBeLthxFTkPaRMUKyxxSy6\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a7231582043a80c0ff11dce1948e5be6a9beec3b740ef7249ba1c45731b7241e7f3304ce864736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582043a80c0ff11dce1948e5be6a9beec3b740ef7249ba1c45731b7241e7f3304ce864736f6c63430005100032",
+  "sourceMap": "66:55:1:-;;;93:26;8:9:-1;5:2;;;30:1;27;20:12;5:2;93:26:1;66:55;;;;;;",
+  "deployedSourceMap": "66:55:1:-;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Ghostlycoinls {\n  constructor() public {\n  }\n}\n",
+  "sourcePath": "/Users/shivampatel/Projects/Ghostlycoin/contracts/Ghostlycoinls.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Ghostlycoinls.sol",
+    "exportedSymbols": {
+      "Ghostlycoinls": [
+        19
+      ]
+    },
+    "id": 20,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 14,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 19,
+        "linearizedBaseContracts": [
+          19
+        ],
+        "name": "Ghostlycoinls",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 17,
+              "nodeType": "Block",
+              "src": "114:5:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 18,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 15,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "104:2:1"
+            },
+            "returnParameters": {
+              "id": 16,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "114:0:1"
+            },
+            "scope": 19,
+            "src": "93:26:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 20,
+        "src": "66:55:1"
+      }
+    ],
+    "src": "32:90:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Ghostlycoinls.sol",
+      "exportedSymbols": {
+        "Ghostlycoinls": [
+          19
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 14,
+        "name": "PragmaDirective",
+        "src": "32:32:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            19
+          ],
+          "name": "Ghostlycoinls",
+          "scope": 20
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 19,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 15,
+                "name": "ParameterList",
+                "src": "104:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 16,
+                "name": "ParameterList",
+                "src": "114:0:1"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 17,
+                "name": "Block",
+                "src": "114:5:1"
+              }
+            ],
+            "id": 18,
+            "name": "FunctionDefinition",
+            "src": "93:26:1"
+          }
+        ],
+        "id": 19,
+        "name": "ContractDefinition",
+        "src": "66:55:1"
+      }
+    ],
+    "id": 20,
+    "name": "SourceUnit",
+    "src": "32:90:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-09-06T14:33:07.708Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

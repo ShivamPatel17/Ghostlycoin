@@ -1,1 +1,1 @@
-# Ghostlycoin
+# Ghostlycoin - my implementation of ERC-20

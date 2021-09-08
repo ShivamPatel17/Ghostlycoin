@@ -6,7 +6,6 @@ pragma solidity >=0.4.22 <0.9.0;
 /// @notice this coin does nothing. It's for learning purposes
 /// @dev followed a tutorial from Dapp University on Youtube
 contract Ghostlycoin{
-
     string public name = "Ghostlycoin";
     //GSC = GHOSTLYSHOT COIN :)
     string public symbol = "GSC";
@@ -59,6 +58,7 @@ contract Ghostlycoin{
         //to fire an event in solidity, just call it's name
         emit Transfer(msg.sender, _to, _value);
 
+        
         return true;
     }
 

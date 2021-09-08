@@ -1,5 +1,5 @@
 {
-  "contractName": "Ghostlycoinls",
+  "contractName": "GhostlycoinSale",
   "abi": [
     {
       "inputs": [],
@@ -8,25 +8,25 @@
       "type": "constructor"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Ghostlycoinls.sol\":\"Ghostlycoinls\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Ghostlycoinls.sol\":{\"keccak256\":\"0x8689d263d131fe6353bddb0516fb0841f7d4c0a1ad0826ca98e7ca42bfb241ab\",\"urls\":[\"bzz-raw://4d7a4451f6e305e6f77d025753d9c1cb574151d01b7f2db55bf845858fcd7ef8\",\"dweb:/ipfs/QmfGCFFVTExXYbcEV6Xdmpt1RBeLthxFTkPaRMUKyxxSy6\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a7231582043a80c0ff11dce1948e5be6a9beec3b740ef7249ba1c45731b7241e7f3304ce864736f6c63430005100032",
-  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582043a80c0ff11dce1948e5be6a9beec3b740ef7249ba1c45731b7241e7f3304ce864736f6c63430005100032",
-  "sourceMap": "66:55:1:-;;;93:26;8:9:-1;5:2;;;30:1;27;20:12;5:2;93:26:1;66:55;;;;;;",
-  "deployedSourceMap": "66:55:1:-;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Ghostlycoinls {\n  constructor() public {\n  }\n}\n",
-  "sourcePath": "/Users/shivampatel/Projects/Ghostlycoin/contracts/Ghostlycoinls.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"author\":\"Shivam Patel\",\"details\":\"followed a tutorial from Dapp University on Youtube\",\"methods\":{},\"title\":\"Token Sale contract for Ghostlycoin\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/GhostlycoinSale.sol\":\"GhostlycoinSale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/GhostlycoinSale.sol\":{\"keccak256\":\"0x35cc39ac63ea03e8a9b836ccfc4618bffbbe806e9adc3799664d12a4a69662af\",\"urls\":[\"bzz-raw://af78e4d305ea4a7c72a9f26e8499eab83fe532aff09f936d5748462f3f76af12\",\"dweb:/ipfs/QmVusS7S9Tg8ezthCiedTjHobAdg5BXyXdwdgCX24fumit\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820f2b42662a505dd7608b7264eb0bb7b89783c97899a0ebe6c66af471da1551dd964736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820f2b42662a505dd7608b7264eb0bb7b89783c97899a0ebe6c66af471da1551dd964736f6c63430005100032",
+  "sourceMap": "212:138:0:-;;;247:100;8:9:-1;5:2;;;30:1;27;20:12;5:2;247:100:0;212:138;;;;;;",
+  "deployedSourceMap": "212:138:0:-;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\n/// @title Token Sale contract for Ghostlycoin\n/// @author Shivam Patel\n/// @notice \n/// @dev followed a tutorial from Dapp University on Youtube\ncontract GhostlycoinSale{\n    \n    constructor() public{\n        //Assign an admin\n        //Token Contract\n        //token price\n    }\n\n}",
+  "sourcePath": "/Users/shivampatel/Projects/Ghostlycoin/contracts/GhostlycoinSale.sol",
   "ast": {
-    "absolutePath": "project:/contracts/Ghostlycoinls.sol",
+    "absolutePath": "project:/contracts/GhostlycoinSale.sol",
     "exportedSymbols": {
-      "Ghostlycoinls": [
-        19
+      "GhostlycoinSale": [
+        6
       ]
     },
-    "id": 20,
+    "id": 7,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 14,
+        "id": 1,
         "literals": [
           "solidity",
           ">=",
@@ -37,66 +37,66 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:32:1"
+        "src": "32:32:0"
       },
       {
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
-        "documentation": null,
+        "documentation": "@title Token Sale contract for Ghostlycoin\n @author Shivam Patel\n @notice \n @dev followed a tutorial from Dapp University on Youtube",
         "fullyImplemented": true,
-        "id": 19,
+        "id": 6,
         "linearizedBaseContracts": [
-          19
+          6
         ],
-        "name": "Ghostlycoinls",
+        "name": "GhostlycoinSale",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 17,
+              "id": 4,
               "nodeType": "Block",
-              "src": "114:5:1",
+              "src": "267:80:0",
               "statements": []
             },
             "documentation": null,
-            "id": 18,
+            "id": 5,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 15,
+              "id": 2,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "104:2:1"
+              "src": "258:2:0"
             },
             "returnParameters": {
-              "id": 16,
+              "id": 3,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "114:0:1"
+              "src": "267:0:0"
             },
-            "scope": 19,
-            "src": "93:26:1",
+            "scope": 6,
+            "src": "247:100:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 20,
-        "src": "66:55:1"
+        "scope": 7,
+        "src": "212:138:0"
       }
     ],
-    "src": "32:90:1"
+    "src": "32:318:0"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "project:/contracts/Ghostlycoinls.sol",
+      "absolutePath": "project:/contracts/GhostlycoinSale.sol",
       "exportedSymbols": {
-        "Ghostlycoinls": [
-          19
+        "GhostlycoinSale": [
+          6
         ]
       }
     },
@@ -113,9 +113,9 @@
             ".0"
           ]
         },
-        "id": 14,
+        "id": 1,
         "name": "PragmaDirective",
-        "src": "32:32:1"
+        "src": "32:32:0"
       },
       {
         "attributes": {
@@ -126,13 +126,13 @@
             null
           ],
           "contractKind": "contract",
-          "documentation": null,
+          "documentation": "@title Token Sale contract for Ghostlycoin\n @author Shivam Patel\n @notice \n @dev followed a tutorial from Dapp University on Youtube",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            19
+            6
           ],
-          "name": "Ghostlycoinls",
-          "scope": 20
+          "name": "GhostlycoinSale",
+          "scope": 7
         },
         "children": [
           {
@@ -145,7 +145,7 @@
                 null
               ],
               "name": "",
-              "scope": 19,
+              "scope": 6,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -158,9 +158,9 @@
                   ]
                 },
                 "children": [],
-                "id": 15,
+                "id": 2,
                 "name": "ParameterList",
-                "src": "104:2:1"
+                "src": "258:2:0"
               },
               {
                 "attributes": {
@@ -169,9 +169,9 @@
                   ]
                 },
                 "children": [],
-                "id": 16,
+                "id": 3,
                 "name": "ParameterList",
-                "src": "114:0:1"
+                "src": "267:0:0"
               },
               {
                 "attributes": {
@@ -180,24 +180,24 @@
                   ]
                 },
                 "children": [],
-                "id": 17,
+                "id": 4,
                 "name": "Block",
-                "src": "114:5:1"
+                "src": "267:80:0"
               }
             ],
-            "id": 18,
+            "id": 5,
             "name": "FunctionDefinition",
-            "src": "93:26:1"
+            "src": "247:100:0"
           }
         ],
-        "id": 19,
+        "id": 6,
         "name": "ContractDefinition",
-        "src": "66:55:1"
+        "src": "212:138:0"
       }
     ],
-    "id": 20,
+    "id": 7,
     "name": "SourceUnit",
-    "src": "32:90:1"
+    "src": "32:318:0"
   },
   "compiler": {
     "name": "solc",
@@ -205,9 +205,12 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-09-06T14:33:07.708Z",
+  "updatedAt": "2021-09-08T02:37:16.425Z",
   "devdoc": {
-    "methods": {}
+    "author": "Shivam Patel",
+    "details": "followed a tutorial from Dapp University on Youtube",
+    "methods": {},
+    "title": "Token Sale contract for Ghostlycoin"
   },
   "userdoc": {
     "methods": {}

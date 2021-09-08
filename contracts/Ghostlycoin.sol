@@ -15,16 +15,23 @@ contract Ghostlycoin{
     //we need a way to read the total number of tokens
     uint256 public totalSupply;
 
-    //consumers can subscribe to this event
+    //consumers can subscribe to events, thus events are just a way to emit what happened in a contract
     event Transfer(
         address indexed _from,
         address indexed _to,
         uint256 _value
     );
 
-
+    event Approval(
+        address indexed _owner,
+        address indexed _spender,
+        uint256 _value
+    );
+    
+    
+    
     mapping(address=> uint256) public balanceOf;
-
+    mapping(address=> mapping(address=> uint256)) public allowance;
 
 
     /* Constructor
@@ -54,4 +61,24 @@ contract Ghostlycoin{
 
         return true;
     }
+
+    //approve
+    function approve(address _spender, uint256 _value) public returns (bool success){
+        allowance[msg.sender][_spender] = _value;
+        emit Approval(msg.sender, _spender, _value);
+
+        return true;
+    }
+
+    function transferFrom(address _from, address _to, uint256 _value) public returns (bool success){
+        require(_value <= balanceOf[_from]);
+        require(_value <= allowance[_from][msg.sender]);
+        balanceOf[_from] -= _value;
+        balanceOf[_to] += _value;
+        allowance[_from][msg.sender] -= _value;
+        emit Transfer(_from, _to, _value);
+        return true;
+    }
 }
+
+///9/6/2021 paused tutorial at 1:59:00

@@ -58,7 +58,7 @@ contract Ghostlycoin{
         //to fire an event in solidity, just call it's name
         emit Transfer(msg.sender, _to, _value);
 
-        
+                
         return true;
     }
 

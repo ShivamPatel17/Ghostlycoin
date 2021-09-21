@@ -23,7 +23,7 @@ contract GhostlycoinSale{
         //the admin will be the person who deploys this contract
         admin = msg.sender;
         tokenContract = _tokenContract;
-        tokenPrice = _tokenPrice;
+        tokenPrice = _tokenPrice;        
     }
     
     function multiply(uint x, uint y) internal pure returns (uint z){
@@ -40,6 +40,11 @@ contract GhostlycoinSale{
         emit Sell(msg.sender, _numberOfTokens);
     }
 
+    function endSale() public {
+        require(msg.sender == admin);
+        require(tokenContract.transfer(admin, tokenContract.balanceOf(address(this))));
+        //need self destruct but payable address doesn't work
+    }
 
 
 }

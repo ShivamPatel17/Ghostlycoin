@@ -63,5 +63,27 @@ contract('GhostlycoinSale', function(accounts){
         });
       });
 
+      it('ends token sale', function(){
+        return Ghostlycoin.deployed().then(function(instance) {
+          tokenInstance = instance;
+          return GhostlycoinSale.deployed();
+        }).then(function(instance){
+          tokenSaleInstance = instance;
+          return tokenSaleInstance.endSale({from: buyer});
+        }).then(assert.fail).catch(function(error){
+          assert(error.message.indexOf('revert') >= 0, 'must be admin to end sale');
+          return tokenSaleInstance.endSale({from: admin});
+        }).then(function(receipt){
+          return tokenInstance.balanceOf(admin);
+        }).then(function(balance){
+          assert.equal(balance.toNumber(), 999990, 'returns all unsold tokens to admin');
+          return tokenSaleInstance.tokenPrice();
+        });
+        // need to get self destruct to work first
+        // .then(function(price){
+        //   assert.equal(price.toNumber(), 0, 'token price was reset');
+        // })
+      });
+
     
 })

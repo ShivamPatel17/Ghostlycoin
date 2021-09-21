@@ -79,6 +79,8 @@ contract Ghostlycoin{
         emit Transfer(_from, _to, _value);
         return true;
     }
+
+
 }
 
 ///9/6/2021 paused tutorial at 1:59:00

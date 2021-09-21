@@ -1,0 +1,17 @@
+{
+    "name": "ghostlycoin-token-sale",
+    "version": "1.0.0",
+    "description": "Ghostlycoin Token Sale ICO",
+    "main": "truffle.js",
+    "directories": {
+        "test": "test"
+    },
+    "author": "Shivam",
+    "license": "ISC",
+    "scripts": {
+        "dev": "lite-server"
+    },
+    "dependencies": {
+        "lite-server": "^2.6.1"
+    }
+}
